@@ -51,22 +51,37 @@
         }
         .three-column{
             width: 100%;
-            display: flex;
-            gap: 25px;
+            /* display: flex;
+            gap: 25px; */
         }
-        .box img{
-            position: relative;
-            bottom: 30px;
+        .three-column .column1{
+          width: 150px;
+          display: inline-block;
         }
-        .decoBox img{
-            position: relative;
-            bottom: 40px;
+        .three-column .column2{
+          width: 150px;
+          display: inline-block;
+          margin-left: 20px;
+        }
+        .three-column .column3{
+          width: 150px;
+          display: inline-block;
+          margin-left: 20px;
         }
         .two-column{
             width: 100%;
-            display: flex;
-            gap: 47px;
             padding-bottom: 40px;
+        }
+        .two-column .cushon-column{
+          /* width: 220px;
+          height: 591px; */
+          display: inline-block;
+          margin-right: 47px;
+        }
+        .two-column .livingRoom-column{
+          /* width: 220px;
+          height: 591px; */
+          display: inline-block;
         }
 
     /* @media screen and (max-width: 640px){
@@ -78,7 +93,7 @@
         }
     }     */
 
-		@media screen and (max-width: 559px) { 
+		@media screen and (max-width: 600px) { 
         .wrapper{
             max-width: 300px !important;
             width: 100%;
@@ -93,34 +108,57 @@
         .spanC{
             font-size: 14px !important;
         }
-        .three-column{
-            flex-direction: column !important;
-            align-items: center;
-            gap: 70px !important;
+        .featuresH1{
+          padding-bottom: 30px !important;
         }
-        .two-column{
-           flex-direction: column;
-           align-items: center;
+        .three-column .column1{
+          display: block !important;
+          margin-left: 77px !important;
         }
+        .three-column .column2{
+          display: block !important;
+          margin-left: 77px !important;
+        }
+        .three-column .column3{
+          display: block !important;
+          margin-left: 77px !important;
+        }
+        .decoBtn{
+          margin-right: 3px;
+        }
+        .two-column .cushon-column{
+          display: block !important;
+          margin-right: 0px !important;
+          margin-left: 36px !important;
+          margin-bottom: 50px;
+        }
+        /* .livingRoomBox{
+          padding-right: 75px !important;
+        } */
+        .two-column .livingRoom-column{
+          display: block !important;
+          margin-left: 45px !important;
+        }
+
         .rightBtnLiving{
           padding-bottom: 20px !important;
         }
 		}
-    @media screen and (max-width: 540px){
+    /* @media screen and (max-width: 600px){
         .strongC{
           position: relative !important; 
           bottom: 320px !important; 
           right: 130px !important;
         }
-    }
-		@media screen and (max-width: 400px) {
+    } */
+		/* @media screen and (max-width: 400px) {
         .strongC{
             font-size: 20px !important;
             position: relative !important; 
             bottom: 208px !important; 
             right: 90px !important;
         }
-		}
+		} */
 	</style>
 </head>
 <body>
@@ -147,11 +185,9 @@
                 <table width="100%">
                    <tr>
                      <td>
-                        <img src="https://i.ibb.co/JcfT8d5/fun0.png" 
+                        <img src="https://i.ibb.co/yQDswnt/fun0.png" 
                         alt="Banner" title="banner" width="100%"
                         style="max-width: 600px;">
-                        <p class="strongC" style="font-size: 28px; font-weight: bold; color: #6B3B51; text-align: center; position: relative; bottom: 320px; right: 130px;"><strong style="color: #873448;">FALL</strong> IN LOVE<br>
-                        <span style="font-size: 15px; color: #3B3A36;" class="spanC">with this season's collection</span></p>
                         <table class="wrapper">
                             <tr>
                               <td style="text-align: center; padding-bottom: 40px;">
@@ -177,17 +213,17 @@
                 <table class="wrapper">
                     <tr>
                       <td>
-                        <p style="font-size: 20px; color: #3B3A36; text-align: center; padding-bottom: 60px;">FEATURED SEATING</p>
+                        <p style="font-size: 20px; color: #3B3A36; text-align: center; padding-bottom: 60px;" class="featuresH1">FEATURED SEATING</p>
                         <table width="100%" style="padding-bottom: 70px;">
                             <tr>
                               <td class="three-column">
-                                <table class="column">
+                                <table class="column1">
                                     <tr>
                                       <td style="text-align: center;">
                                         <table>
                                             <tr>
-                                              <td class="box" width="150px" height="160px" style="background-color: #FFFFFF;">
-                                                <a href="#"><img src="https://i.ibb.co/5csT18R/fun2.png" 
+                                              <td class="box" width="150px" height="160px">
+                                                <a href="#"><img src="https://i.ibb.co/N6BR1fN/fun2.png" 
                                                     alt="image" title="image" width="150"></a>
                                               </td>
                                             </tr>
@@ -196,13 +232,13 @@
                                       </td>
                                     </tr>
                                 </table>
-                                <table class="column">
+                                <table class="column2">
                                     <tr>
                                       <td style="text-align: center;">
                                         <table>
                                             <tr>
-                                              <td class="box" width="150px" height="160px" style="background-color: #FFFFFF;">
-                                                <a href="#"><img src="https://i.ibb.co/qp5FWnm/fun3.png" 
+                                              <td class="box" width="150px" height="160px">
+                                                <a href="#"><img src="https://i.ibb.co/K25WN2v/fun3.png" 
                                                     alt="image" title="image" width="150"></a>
                                               </td>
                                             </tr>
@@ -211,13 +247,13 @@
                                       </td>
                                     </tr>
                                 </table>
-                                <table class="column">
+                                <table class="column3">
                                     <tr>
                                       <td style="text-align: center;">
                                         <table>
                                             <tr>
-                                              <td class="box" width="150px" height="160px" style="background-color: #FFFFFF;">
-                                                <a href="#"><img src="https://i.ibb.co/KGGwW7j/fun4.png" 
+                                              <td class="box" width="150px" height="160px">
+                                                <a href="#"><img src="https://i.ibb.co/gtzC1cz/fun4.png" 
                                                     alt="image" title="image" width="150"></a>
                                               </td>
                                             </tr>
@@ -241,15 +277,15 @@
                 <table class="wrapper">
                     <tr>
                       <td style="text-align: center;">
-                        <p style="font-size: 20px; font-weight: bold; color: #3B3A36; padding-bottom: 50px;">BROWSE DECOR SETS</p>
+                        <p style="font-size: 20px; font-weight: bold; color: #3B3A36; padding-bottom: 0px;">BROWSE DECOR SETS</p>
                         <table width="100%">
                             <tr>
                               <td style="padding-bottom: 100px;">
-                                <div class="decoBox" width="100%" height="143px" style="background-color: #FFFFFF; margin-bottom: 30px;">
-                                    <img src="https://i.ibb.co/zNMD0S7/fun5.png" 
-                                    alt="Image" title="Decor" width="100%" style="max-width: 443px;">
+                                <div class="decoBox" width="100%" height="184px" style="margin-bottom: 30px;">
+                                    <img src="https://i.ibb.co/sFxwYrf/fun5.png" 
+                                    alt="Image" title="Decor" width="100%" style="max-width: 500px;">
                                 </div>
-                                <a href="#" class="btn">Shop Now</a>
+                                <a href="#" class="btn decoBtn">Shop Now</a>
                               </td>
                             </tr>
                         </table>
@@ -320,21 +356,21 @@
                         <table class="livingRoom-column">
                             <tr>
                               <td style="background-color: #FFFFFF;">
-                                <table style="padding: 15px 46px 13px 46px;">
+                                <table style="padding: 15px 46px 13px 46px;" class="livingRoomBox">
                                     <tr>
                                       <td>
-                                        <p style="font-size: 18px; font-weight: bold; color: #3B3A36;">LIVING ROOM</p>
+                                        <p style="font-size: 16px; font-weight: bold; color: #3B3A36;">LIVING ROOM</p>
                                       </td>
                                     </tr>
                                 </table>
-                                <table style="padding-bottom: 74px;">
+                                <table style="padding-bottom: 90px;">
                                     <tr>
                                       <td>
                                         <img src="https://i.ibb.co/BV1GqBs/right1.png" alt="">
                                       </td>
                                     </tr>
                                 </table>
-                                <table class="rightBtnLiving" style="padding-left: 44px; padding-right: 46px; padding-bottom: 12px;">
+                                <table class="rightBtnLiving" style="padding-left: 44px; padding-right: 46px; padding-bottom: 20px;">
                                     <tr>
                                       <td>
                                         <a href="#" class="btn">Shop Now</a>
